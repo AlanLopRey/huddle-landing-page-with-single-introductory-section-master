@@ -30,8 +30,8 @@ body {
   align-self: flex-start;
   width: 15.625rem;
   height: 2.8125rem;
-  margin-bottom: 135px;
-  margin-top: 70px;
+  margin-bottom: 8.4375rem;
+  margin-top: 4.375rem;
 }
 .header {
   text-align: center;
@@ -39,10 +39,10 @@ body {
   font-family: $heading__font;
   width: 39.6875rem;
   height: 25.9375rem;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
   &__h1 {
     font-size: 3em;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
   &__p {
     font-size: 2em;
@@ -52,7 +52,7 @@ body {
 .image {
   width: 37.5rem;
   height: 26.25rem;
-  margin-bottom: 140px;
+  margin-bottom: 8.75rem;
 }
 
 .btn {
@@ -61,8 +61,8 @@ body {
   font-size: 1.25em;
   color: $Violet;
   border-radius: 3rem;
-  box-shadow: 2px 1px 7px 0px #1b1b1b;
-  margin-bottom: 125px;
+  box-shadow: 0.125rem 0.0625rem 0.4375rem 0rem #1b1b1b;
+  margin-bottom: 7.8125rem;
   &:hover {
     background-color: $Soft-Magenta;
     border: 0 none;
@@ -73,14 +73,14 @@ body {
 .nav {
   width: 13.4375rem;
   height: 3.75rem;
-  margin-bottom: 100px;
+  margin-bottom: 6.25rem;
   &__li {
     list-style: none;
-    border: 3px solid #f1f1f1;
+    border: 0.1875rem solid #f1f1f1;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    padding: 5px 5px 5px 5px;
+    width: 3.75rem;
+    height: 3.75rem;
+    padding: 0.3125rem 0.3125rem 0.3125rem 0.3125rem;
     &:hover {
       border-color: $Soft-Magenta;
       transition: ease 0.2s;
@@ -92,7 +92,7 @@ body {
       display: inline;
       position: relative;
       text-align: end;
-      bottom: 3px;
+      bottom: 0.1875rem;
       filter: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(109%)
         hue-rotate(310deg) brightness(114%) contrast(89%);
       &:hover {
@@ -105,25 +105,23 @@ body {
   &__ul {
     display: flex;
     justify-content: space-around;
-    left: -15px;
+    left: -0.9375rem;
     position: relative;
-    width: 215px;
+    width: 13.4375rem;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 90rem) {
   body {
     background-image: url(./images/bg-desktop.svg);
     background-repeat: no-repeat;
     background-position: top bottom;
-    // background-size:
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .main {
     display: grid;
-    // border: .0625rem solid black;
     grid-template-rows: repeat(4, auto);
     grid-template-columns: repeat(4, auto);
   }
@@ -131,19 +129,19 @@ body {
   .logo {
     grid-area: 1/1/2/2;
     align-self: start;
-    margin-bottom: 100px;
+    margin-bottom: 6.25rem;
   }
   .image {
     grid-area: 2/1/4/3;
-    width: 43.75rem;
-    height: 30.9375rem;
+    width: 700px;
+    height: 495px;
   }
   .header {
     grid-area: 2/3/3/5;
     width: 32.1875rem;
     height: 13.125rem;
-    margin-bottom: 60px;
-    margin-left: 55px;
+    margin-bottom: 3.75rem;
+    margin-left: 3.4375rem;
     text-align: left;
     align-self: end;
     &__h1 {
@@ -156,7 +154,7 @@ body {
   .btn {
     grid-area: 3/3/4/4;
     align-self: start;
-    margin-left: 55px;
+    margin-left: 3.4375rem;
     width: 12.8125rem;
     height: 3.75rem;
   }
@@ -165,11 +163,12 @@ body {
     justify-self: end;
     align-self: start;
     position: relative;
-    left: 40px;
-    margin-bottom: -5px;
+    left: 2.5rem;
+    margin-bottom: -0.3125rem;
+    bottom: 4.375rem;
     &__li {
-      width: 2.75rem;
-      height: 2.75rem;
+      width: 44px;
+      height: 44px;
     }
   }
 }
